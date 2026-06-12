@@ -1,0 +1,74 @@
+# config.yaml
+
+# Dataset Configuration
+dataset:
+  name: 'CIFAR10' # 'CIFAR10' or 'ImageNet'
+  root: './data'
+  batch_size: 256
+  num_workers: 4
+  jpeg_quality: [10, 30, 50, 70, 90] # for JPEG baseline
+
+# Model Configuration
+compression_model:
+  enabled: True
+  num_filters: 192
+  num_features: 128
+  num_hyperpriors: 192
+  quantization: 'ste' # 'noise' or 'ste'
+
+task_model:
+  name: 'resnet18' # 'resnet18', 'resnet50'
+  pretrained: True
+
+# TACS Configuration
+tacs:
+  tau_start: 5.0
+  tau_end: 0.1
+  total_epochs: 100
+
+# Training Configuration
+training:
+  seed: 42
+  epochs: 100
+  optimizer: 'SGD'
+  momentum: 0.9
+  weight_decay: 1e-4
+  nesterov: True
+  learning_rate: 0.1
+  lr_scheduler: 'CosineAnnealingLR'
+  use_amp: True # Mixed Precision (FP16)
+
+  rac_weights:
+    lambda_rate: 0.01
+    lambda_accuracy: 1.0
+    lambda_complexity: 0.0 # Disabled by default
+
+# Evaluation
+evaluation:
+  results_dir: './results'
+  device_tdp: 70 # NVIDIA T4 TDP in Watts
+
+# Ablation Study
+ablation:
+  enabled: True
+  seeds: [42, 123, 456] # 3 independent seeds
+  experiments:
+    - name: 'resnet18_baseline'
+      task_model.name: 'resnet18'
+      compression_model.enabled: False
+      jpeg_quality: null
+
+    - name: 'resnet18_jpeg_q10'
+      task_model.name: 'resnet18'
+      compression_model.enabled: False
+      jpeg_quality: 10
+
+    - name: 'tap_cdp_resnet18'
+      task_model.name: 'resnet18'
+      compression_model.enabled: True
+      jpeg_quality: null
+
+    - name: 'tap_cdp_resnet50'
+      task_model.name: 'resnet50'
+      compression_model.enabled: True
+      jpeg_quality: null
