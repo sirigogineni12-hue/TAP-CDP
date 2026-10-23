@@ -1,0 +1,31 @@
+Rule (fixed in advance): largest lambda whose mean held-out validation accuracy is within 1.0 points of CI-DCT. Test accuracy is not used.
+cifar10/resnet18/100 epochs, design y/pool: CI-DCT val 50.05%
+  TACS init 0 (repository default):
+     lambda=0.01: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.05: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.5: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     -> no lambda within tolerance
+  TACS init 2:
+     lambda=0.01: val 51.21 $\pm$ 0.52, bands 64.0 $\pm$ 0.0
+     lambda=0.05: val 51.69 $\pm$ 0.89, bands 64.0 $\pm$ 0.0
+     lambda=0.1: val 50.71 $\pm$ 0.52, bands 63.7 $\pm$ 0.6
+     lambda=0.5: val 42.58 $\pm$ 2.51, bands 8.3 $\pm$ 0.6
+     lambda=1: val 24.15 $\pm$ 14.58, bands 2.7 $\pm$ 2.3
+     -> selected lambda = 0.1
+cifar10/resnet18/100 epochs, design ycbcr/nopool_s1/norm: CI-DCT val 76.29%
+  TACS init 2:
+     lambda=0.01: val 75.71 $\pm$ 2.09, bands 192.0 $\pm$ 0.0
+     lambda=0.05: val 75.99 $\pm$ 1.25, bands 192.0 $\pm$ 0.0
+     lambda=0.1: val 76.35 $\pm$ 1.41, bands 192.0 $\pm$ 0.0
+     lambda=0.5: val 74.47 $\pm$ 0.83, bands 25.3 $\pm$ 2.1
+     lambda=1: val 69.28 $\pm$ 2.20, bands 11.3 $\pm$ 3.2
+     -> selected lambda = 0.1
+  Xu et al. gate:
+     lambda=0.0005: val 75.10 $\pm$ 0.72, bands 171.8 $\pm$ 12.6
+     lambda=0.001: val 75.13 $\pm$ 1.71, bands 61.6 $\pm$ 8.1
+     lambda=0.005: val 63.37 $\pm$ 0.96, bands 5.4 $\pm$ 0.5
+     lambda=0.01: val 61.84 $\pm$ 1.52, bands 4.0 $\pm$ 0.0
+     lambda=0.05: val 50.31 $\pm$ 5.22, bands 2.0 $\pm$ 0.4
+     -> no lambda within tolerance
