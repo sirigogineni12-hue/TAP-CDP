@@ -1,0 +1,51 @@
+{
+  "run_id": "imagenette_resnet50_pixel_e20_seed456",
+  "config": {
+    "dataset": "imagenette",
+    "data_root": "<repo>/results/data/imagenette2-320",
+    "backbone": "resnet50",
+    "mode": "pixel",
+    "lam": 0.0,
+    "color": "y",
+    "stem": "pool",
+    "dct_norm": false,
+    "tacs_init": 0.0,
+    "k": null,
+    "seed": 456,
+    "epochs": 20,
+    "batch_size": 64,
+    "lr": 0.01,
+    "weight_decay": 0.0001,
+    "workers": 3,
+    "val_per_class": 50,
+    "test_jpeg_quality": null,
+    "amp": "bf16",
+    "no_pretrained": false,
+    "max_steps_per_epoch": null,
+    "max_eval_batches": null,
+    "out": "runs",
+    "run_id": "imagenette_resnet50_pixel_e20_seed456",
+    "n_train": 8969,
+    "n_val": 500,
+    "n_test": 3925
+  },
+  "val_acc": 99.4,
+  "test_acc": 98.80254777070064,
+  "train_time_s": 378.67824125289917,
+  "finished": "2026-10-23 12:57:38",
+  "env": {
+    "python": "3.11.16",
+    "torch": "2.11.0+cu128",
+    "torchvision": "0.26.0+cu128",
+    "cuda": "12.8",
+    "cudnn": 91900,
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "cpu_count": 256,
+    "gpus": [
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+    ],
+    "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB\nNVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB"
+  },
+  "code_sha256": "15200f49cc0dd4e5500b0d703c5bf204138901e79918edb948d14397e16d4d70"
+}

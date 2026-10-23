@@ -1,0 +1,17 @@
+Job started at: Fri Oct 23 08:49:42 AM IST 2026 on mangala, GPUs: 0
+==== 2026-10-23 08:49:44 | stage 4: measurements and report ====
+cifar10  resnet18: pixel 0.037 G | DCT 64ch 0.0117 G | pruned k=16 0.0116 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0117 G | y/nopool 0.0150 G | y/nopool_s1 0.0276 G | ycbcr/pool 0.0118 G | ycbcr/nopool 0.0152 G | ycbcr/nopool_s1 0.0278 G
+cifar10  resnet50: pixel 0.084 G | DCT 64ch 0.0243 G | pruned k=16 0.0243 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0243 G | y/nopool 0.0313 G | y/nopool_s1 0.0696 G | ycbcr/pool 0.0245 G | ycbcr/nopool 0.0314 G | ycbcr/nopool_s1 0.0697 G
+imagenet resnet18: pixel 1.819 G | DCT 64ch 0.1258 G | pruned k=16 0.1233 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.1258 G | y/nopool 0.4600 G | y/nopool_s1 1.3547 G | ycbcr/pool 0.1322 G | ycbcr/nopool 0.4665 G | ycbcr/nopool_s1 1.3612 G
+imagenet resnet50: pixel 4.112 G | DCT 64ch 0.2964 G | pruned k=16 0.2940 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.2964 G | y/nopool 1.0570 G | y/nopool_s1 3.4100 G | ycbcr/pool 0.3028 G | ycbcr/nopool 1.0634 G | ycbcr/nopool_s1 3.4164 G
+wrote flops.json
+latency images: <repo>/results/data/coco/val2017
+batch 1: cpu_decode_pillow=0.157ms/img, h2d_copy=0.011ms/img, gpu_decode_nvjpeg=0.068ms/img, preprocess_rgb_normalize=0.019ms/img, preprocess_rgb_to_y=0.024ms/img, forward_block_dct=0.049ms/img, backbone_pixel=1.516ms/img, backbone_dct_k64=1.482ms/img, backbone_dct_k32=1.490ms/img, backbone_dct_k16=1.490ms/img, backbone_dct_k8=1.488ms/img, preprocess_rgb_to_ycbcr=0.064ms/img, forward_block_dct_ycbcr=0.054ms/img, dct_normalize_64ch=0.012ms/img, dct_normalize_192ch=0.012ms/img, backbone_dct_ycbcr-pool-norm=1.490ms/img, backbone_dct_ycbcr-nopool-norm=1.488ms/img, backbone_dct_ycbcr-nopool_s1-norm=1.487ms/img
+batch 64: cpu_decode_pillow=0.190ms/img, h2d_copy=0.003ms/img, gpu_decode_nvjpeg=0.019ms/img, preprocess_rgb_normalize=0.001ms/img, preprocess_rgb_to_y=0.001ms/img, forward_block_dct=0.003ms/img, backbone_pixel=0.252ms/img, backbone_dct_k64=0.041ms/img, backbone_dct_k32=0.041ms/img, backbone_dct_k16=0.041ms/img, backbone_dct_k8=0.041ms/img, preprocess_rgb_to_ycbcr=0.002ms/img, forward_block_dct_ycbcr=0.011ms/img, dct_normalize_64ch=0.000ms/img, dct_normalize_192ch=0.001ms/img, backbone_dct_ycbcr-pool-norm=0.041ms/img, backbone_dct_ycbcr-nopool-norm=0.067ms/img, backbone_dct_ycbcr-nopool_s1-norm=0.154ms/img
+energy (mJ/image, above idle): {'pixel': 35.1942, 'dct_k64': 4.4135, 'dct_k32': 4.3006, 'dct_k16': 4.3892, 'dct_k8': 4.5079, 'dct_ycbcr-pool-norm': 4.642, 'dct_ycbcr-nopool-norm': 10.2297, 'dct_ycbcr-nopool_s1-norm': 23.8481}
+wrote latency.json
+Job ended at: Fri Oct 23 08:53:33 AM IST 2026

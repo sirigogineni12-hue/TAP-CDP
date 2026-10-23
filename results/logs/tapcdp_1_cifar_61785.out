@@ -1,0 +1,5 @@
+Job started at: Wed Oct 21 08:30:05 PM IST 2026 on mangala, GPUs: 0,1
+==== 2026-10-21 20:30:07 | stage 1: CIFAR-10 ====
+finished CIFAR-10 runs: 54
+==== 2026-10-21 22:59:32 | stage 1 finished ====
+Job ended at: Wed Oct 21 10:59:32 PM IST 2026

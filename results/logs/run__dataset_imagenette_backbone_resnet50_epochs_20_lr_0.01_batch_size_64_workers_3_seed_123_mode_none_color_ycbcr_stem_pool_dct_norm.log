@@ -1,0 +1,22 @@
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | DCT statistics from training images: mean |mean| 0.006, std range 0.003-8.899
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 1/20 | loss 1.8523 | val 55.80% | bands 192 | 16s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 2/20 | loss 1.3149 | val 70.80% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 3/20 | loss 1.0986 | val 75.40% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 4/20 | loss 0.9918 | val 76.20% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 5/20 | loss 0.9146 | val 77.20% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 6/20 | loss 0.8252 | val 79.60% | bands 192 | 10s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 7/20 | loss 0.7751 | val 78.80% | bands 192 | 8s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 8/20 | loss 0.7174 | val 81.60% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 9/20 | loss 0.6790 | val 82.80% | bands 192 | 8s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 10/20 | loss 0.6493 | val 85.40% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 11/20 | loss 0.5996 | val 82.40% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 12/20 | loss 0.5661 | val 84.80% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 13/20 | loss 0.5352 | val 85.60% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 14/20 | loss 0.5059 | val 86.20% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 15/20 | loss 0.4798 | val 87.40% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 16/20 | loss 0.4727 | val 87.60% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 17/20 | loss 0.4663 | val 88.80% | bands 192 | 9s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 18/20 | loss 0.4386 | val 88.40% | bands 192 | 8s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 19/20 | loss 0.4347 | val 87.80% | bands 192 | 8s
+imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | epoch 20/20 | loss 0.4375 | val 87.80% | bands 192 | 9s
+[done] imagenette_resnet50_none_ycbcr_dctnorm_e20_seed123 | val 87.80% | test 86.55%

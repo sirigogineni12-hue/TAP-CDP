@@ -1,0 +1,21 @@
+imagenette_resnet50_pixel_e20_seed456 | epoch 1/20 | loss 0.3117 | val 94.80% | bands  | 29s
+imagenette_resnet50_pixel_e20_seed456 | epoch 2/20 | loss 0.2310 | val 95.40% | bands  | 31s
+imagenette_resnet50_pixel_e20_seed456 | epoch 3/20 | loss 0.2067 | val 98.40% | bands  | 30s
+imagenette_resnet50_pixel_e20_seed456 | epoch 4/20 | loss 0.1730 | val 96.00% | bands  | 39s
+imagenette_resnet50_pixel_e20_seed456 | epoch 5/20 | loss 0.1596 | val 98.40% | bands  | 34s
+imagenette_resnet50_pixel_e20_seed456 | epoch 6/20 | loss 0.1452 | val 98.20% | bands  | 27s
+imagenette_resnet50_pixel_e20_seed456 | epoch 7/20 | loss 0.1341 | val 99.20% | bands  | 15s
+imagenette_resnet50_pixel_e20_seed456 | epoch 8/20 | loss 0.1169 | val 98.80% | bands  | 15s
+imagenette_resnet50_pixel_e20_seed456 | epoch 9/20 | loss 0.1076 | val 98.80% | bands  | 14s
+imagenette_resnet50_pixel_e20_seed456 | epoch 10/20 | loss 0.0975 | val 98.60% | bands  | 16s
+imagenette_resnet50_pixel_e20_seed456 | epoch 11/20 | loss 0.0896 | val 98.20% | bands  | 16s
+imagenette_resnet50_pixel_e20_seed456 | epoch 12/20 | loss 0.0858 | val 98.20% | bands  | 13s
+imagenette_resnet50_pixel_e20_seed456 | epoch 13/20 | loss 0.0680 | val 99.00% | bands  | 11s
+imagenette_resnet50_pixel_e20_seed456 | epoch 14/20 | loss 0.0652 | val 99.20% | bands  | 9s
+imagenette_resnet50_pixel_e20_seed456 | epoch 15/20 | loss 0.0738 | val 99.00% | bands  | 9s
+imagenette_resnet50_pixel_e20_seed456 | epoch 16/20 | loss 0.0629 | val 99.60% | bands  | 14s
+imagenette_resnet50_pixel_e20_seed456 | epoch 17/20 | loss 0.0617 | val 99.40% | bands  | 15s
+imagenette_resnet50_pixel_e20_seed456 | epoch 18/20 | loss 0.0565 | val 99.20% | bands  | 15s
+imagenette_resnet50_pixel_e20_seed456 | epoch 19/20 | loss 0.0563 | val 99.40% | bands  | 14s
+imagenette_resnet50_pixel_e20_seed456 | epoch 20/20 | loss 0.0585 | val 99.40% | bands  | 14s
+[done] imagenette_resnet50_pixel_e20_seed456 | val 99.40% | test 98.80%

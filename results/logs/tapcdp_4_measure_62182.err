@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "<repo>/revision/rate_accuracy.py", line 183, in <module>
+    main()
+  File "<repo>/revision/rate_accuracy.py", line 146, in main
+    model, cfg, res = load_run(r, dev)
+                      ^^^^^^^^^^^^^^^^
+  File "<repo>/revision/common.py", line 406, in load_run
+    model.load_state_dict(ck["model"])
+  File "<home>/miniconda3/envs/tapcdp/lib/python3.11/site-packages/torch/nn/modules/module.py", line 2639, in load_state_dict
+    raise RuntimeError(
+RuntimeError: Error(s) in loading state_dict for DctClassifier:
+	Missing key(s) in state_dict: "dct_mean", "dct_std". 
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=62182.0
