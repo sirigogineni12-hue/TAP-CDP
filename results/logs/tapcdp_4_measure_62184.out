@@ -1,0 +1,229 @@
+Job started at: Fri Oct 23 08:57:44 AM IST 2026 on mangala, GPUs: 0
+==== 2026-10-23 08:57:46 | stage 4: measurements and report ====
+cifar10  resnet18: pixel 0.037 G | DCT 64ch 0.0117 G | pruned k=16 0.0116 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0117 G | y/nopool 0.0150 G | y/nopool_s1 0.0276 G | ycbcr/pool 0.0118 G | ycbcr/nopool 0.0152 G | ycbcr/nopool_s1 0.0278 G
+cifar10  resnet50: pixel 0.084 G | DCT 64ch 0.0243 G | pruned k=16 0.0243 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0243 G | y/nopool 0.0313 G | y/nopool_s1 0.0696 G | ycbcr/pool 0.0245 G | ycbcr/nopool 0.0314 G | ycbcr/nopool_s1 0.0697 G
+imagenet resnet18: pixel 1.819 G | DCT 64ch 0.1258 G | pruned k=16 0.1233 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.1258 G | y/nopool 0.4600 G | y/nopool_s1 1.3547 G | ycbcr/pool 0.1322 G | ycbcr/nopool 0.4665 G | ycbcr/nopool_s1 1.3612 G
+imagenet resnet50: pixel 4.112 G | DCT 64ch 0.2964 G | pruned k=16 0.2940 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.2964 G | y/nopool 1.0570 G | y/nopool_s1 3.4100 G | ycbcr/pool 0.3028 G | ycbcr/nopool 1.0634 G | ycbcr/nopool_s1 3.4164 G
+wrote flops.json
+latency images: <repo>/results/data/coco/val2017
+batch 1: cpu_decode_pillow=0.156ms/img, h2d_copy=0.012ms/img, gpu_decode_nvjpeg=0.068ms/img, preprocess_rgb_normalize=0.019ms/img, preprocess_rgb_to_y=0.024ms/img, forward_block_dct=0.048ms/img, backbone_pixel=1.503ms/img, backbone_dct_k64=1.470ms/img, backbone_dct_k32=1.481ms/img, backbone_dct_k16=1.474ms/img, backbone_dct_k8=1.475ms/img, preprocess_rgb_to_ycbcr=0.064ms/img, forward_block_dct_ycbcr=0.053ms/img, dct_normalize_64ch=0.012ms/img, dct_normalize_192ch=0.012ms/img, backbone_dct_ycbcr-pool-norm=1.466ms/img, backbone_dct_ycbcr-nopool-norm=1.487ms/img, backbone_dct_ycbcr-nopool_s1-norm=1.482ms/img
+batch 64: cpu_decode_pillow=0.212ms/img, h2d_copy=0.003ms/img, gpu_decode_nvjpeg=0.019ms/img, preprocess_rgb_normalize=0.001ms/img, preprocess_rgb_to_y=0.001ms/img, forward_block_dct=0.003ms/img, backbone_pixel=0.252ms/img, backbone_dct_k64=0.041ms/img, backbone_dct_k32=0.041ms/img, backbone_dct_k16=0.041ms/img, backbone_dct_k8=0.041ms/img, preprocess_rgb_to_ycbcr=0.002ms/img, forward_block_dct_ycbcr=0.011ms/img, dct_normalize_64ch=0.000ms/img, dct_normalize_192ch=0.001ms/img, backbone_dct_ycbcr-pool-norm=0.041ms/img, backbone_dct_ycbcr-nopool-norm=0.067ms/img, backbone_dct_ycbcr-nopool_s1-norm=0.154ms/img
+energy (mJ/image, above idle): {'pixel': 37.3885, 'dct_k64': 4.788, 'dct_k32': 4.7385, 'dct_k16': 4.8531, 'dct_k8': 4.9412, 'dct_ycbcr-pool-norm': 5.1066, 'dct_ycbcr-nopool-norm': 10.7957, 'dct_ycbcr-nopool_s1-norm': 25.168}
+wrote latency.json
+35 models to measure
+cifar10_resnet18_learned_lam0.01_init2_e100_seed42 Q=10: acc 43.77% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_learned_lam0.01_init2_e100_seed42 Q=30: acc 50.18% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_learned_lam0.01_init2_e100_seed42 Q=50: acc 50.54% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_learned_lam0.01_init2_e100_seed42 Q=70: acc 50.85% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_learned_lam0.01_init2_e100_seed42 Q=90: acc 51.11% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_learned_lam0.01_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 44.53% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_learned_lam0.01_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 63.25% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_learned_lam0.01_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 68.13% | 868 B | 6.783 bpp (scan only 1.901)
+cifar10_resnet18_learned_lam0.01_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 71.12% | 955 B | 7.459 bpp (scan only 2.576)
+cifar10_resnet18_learned_lam0.01_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 73.93% | 1229 B | 9.605 bpp (scan only 4.722)
+cifar10_resnet18_learned_lam0.05_init2_e100_seed42 Q=10: acc 42.24% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_learned_lam0.05_init2_e100_seed42 Q=30: acc 50.37% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_learned_lam0.05_init2_e100_seed42 Q=50: acc 51.31% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_learned_lam0.05_init2_e100_seed42 Q=70: acc 51.75% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_learned_lam0.05_init2_e100_seed42 Q=90: acc 51.88% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_learned_lam0.05_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 42.00% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_learned_lam0.05_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 59.84% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_learned_lam0.05_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 65.43% | 868 B | 6.783 bpp (scan only 1.901)
+cifar10_resnet18_learned_lam0.05_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 69.43% | 955 B | 7.459 bpp (scan only 2.576)
+cifar10_resnet18_learned_lam0.05_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 74.11% | 1229 B | 9.605 bpp (scan only 4.722)
+cifar10_resnet18_learned_lam0.1_init2_e100_seed42 Q=10: acc 41.97% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_learned_lam0.1_init2_e100_seed42 Q=30: acc 50.29% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_learned_lam0.1_init2_e100_seed42 Q=50: acc 51.24% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_learned_lam0.1_init2_e100_seed42 Q=70: acc 51.63% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_learned_lam0.1_init2_e100_seed42 Q=90: acc 51.72% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_learned_lam0.1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 40.15% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_learned_lam0.1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 57.53% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_learned_lam0.1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 64.08% | 868 B | 6.783 bpp (scan only 1.901)
+cifar10_resnet18_learned_lam0.1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 68.83% | 955 B | 7.459 bpp (scan only 2.576)
+cifar10_resnet18_learned_lam0.1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 73.57% | 1229 B | 9.605 bpp (scan only 4.722)
+cifar10_resnet18_learned_lam0.5_init2_e100_seed42 Q=10: acc 42.77% | 684 B | 5.342 bpp (scan only 0.459)
+cifar10_resnet18_learned_lam0.5_init2_e100_seed42 Q=30: acc 43.88% | 722 B | 5.641 bpp (scan only 0.758)
+cifar10_resnet18_learned_lam0.5_init2_e100_seed42 Q=50: acc 44.13% | 746 B | 5.829 bpp (scan only 0.946)
+cifar10_resnet18_learned_lam0.5_init2_e100_seed42 Q=70: acc 44.02% | 775 B | 6.057 bpp (scan only 1.174)
+cifar10_resnet18_learned_lam0.5_init2_e100_seed42 Q=90: acc 44.03% | 860 B | 6.720 bpp (scan only 1.837)
+cifar10_resnet18_learned_lam0.5_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 51.95% | 708 B | 5.534 bpp (scan only 0.651)
+cifar10_resnet18_learned_lam0.5_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 67.93% | 776 B | 6.060 bpp (scan only 1.177)
+cifar10_resnet18_learned_lam0.5_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 71.14% | 819 B | 6.402 bpp (scan only 1.519)
+cifar10_resnet18_learned_lam0.5_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 72.79% | 873 B | 6.817 bpp (scan only 1.934)
+cifar10_resnet18_learned_lam0.5_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 74.02% | 1019 B | 7.965 bpp (scan only 3.082)
+cifar10_resnet18_learned_lam1_init2_e100_seed42 Q=10: acc 38.94% | 669 B | 5.230 bpp (scan only 0.347)
+cifar10_resnet18_learned_lam1_init2_e100_seed42 Q=30: acc 39.20% | 690 B | 5.393 bpp (scan only 0.510)
+cifar10_resnet18_learned_lam1_init2_e100_seed42 Q=50: acc 39.39% | 704 B | 5.503 bpp (scan only 0.620)
+cifar10_resnet18_learned_lam1_init2_e100_seed42 Q=70: acc 39.23% | 722 B | 5.641 bpp (scan only 0.758)
+cifar10_resnet18_learned_lam1_init2_e100_seed42 Q=90: acc 39.36% | 781 B | 6.100 bpp (scan only 1.217)
+cifar10_resnet18_learned_lam1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 57.53% | 690 B | 5.388 bpp (scan only 0.505)
+cifar10_resnet18_learned_lam1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 65.51% | 726 B | 5.672 bpp (scan only 0.789)
+cifar10_resnet18_learned_lam1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 66.40% | 749 B | 5.854 bpp (scan only 0.971)
+cifar10_resnet18_learned_lam1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 66.37% | 776 B | 6.061 bpp (scan only 1.179)
+cifar10_resnet18_learned_lam1_init2_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 66.78% | 841 B | 6.569 bpp (scan only 1.686)
+cifar10_resnet18_lowfreq_k16_e100_seed42 Q=10: acc 43.84% | 696 B | 5.437 bpp (scan only 0.555)
+cifar10_resnet18_lowfreq_k16_e100_seed42 Q=30: acc 48.97% | 749 B | 5.851 bpp (scan only 0.968)
+cifar10_resnet18_lowfreq_k16_e100_seed42 Q=50: acc 49.46% | 780 B | 6.097 bpp (scan only 1.215)
+cifar10_resnet18_lowfreq_k16_e100_seed42 Q=70: acc 49.44% | 818 B | 6.394 bpp (scan only 1.511)
+cifar10_resnet18_lowfreq_k16_e100_seed42 Q=90: acc 49.69% | 931 B | 7.272 bpp (scan only 2.389)
+cifar10_resnet18_lowfreq_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 64.59% | 705 B | 5.504 bpp (scan only 0.621)
+cifar10_resnet18_lowfreq_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 71.76% | 751 B | 5.869 bpp (scan only 0.986)
+cifar10_resnet18_lowfreq_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 72.64% | 779 B | 6.086 bpp (scan only 1.203)
+cifar10_resnet18_lowfreq_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 72.65% | 811 B | 6.338 bpp (scan only 1.455)
+cifar10_resnet18_lowfreq_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 72.75% | 897 B | 7.005 bpp (scan only 2.122)
+cifar10_resnet18_lowfreq_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 61.82% | 711 B | 5.553 bpp (scan only 0.670)
+cifar10_resnet18_lowfreq_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 73.35% | 771 B | 6.023 bpp (scan only 1.140)
+cifar10_resnet18_lowfreq_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 74.59% | 807 B | 6.304 bpp (scan only 1.421)
+cifar10_resnet18_lowfreq_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 74.83% | 849 B | 6.635 bpp (scan only 1.752)
+cifar10_resnet18_lowfreq_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 75.22% | 961 B | 7.508 bpp (scan only 2.626)
+cifar10_resnet18_lowfreq_k32_e100_seed42 Q=10: acc 44.90% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_lowfreq_k32_e100_seed42 Q=30: acc 50.96% | 773 B | 6.040 bpp (scan only 1.157)
+cifar10_resnet18_lowfreq_k32_e100_seed42 Q=50: acc 51.41% | 821 B | 6.415 bpp (scan only 1.532)
+cifar10_resnet18_lowfreq_k32_e100_seed42 Q=70: acc 51.83% | 878 B | 6.863 bpp (scan only 1.980)
+cifar10_resnet18_lowfreq_k32_e100_seed42 Q=90: acc 52.09% | 1039 B | 8.118 bpp (scan only 3.235)
+cifar10_resnet18_lowfreq_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 50.24% | 714 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_lowfreq_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 69.86% | 801 B | 6.256 bpp (scan only 1.374)
+cifar10_resnet18_lowfreq_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 73.67% | 859 B | 6.715 bpp (scan only 1.832)
+cifar10_resnet18_lowfreq_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 75.45% | 930 B | 7.265 bpp (scan only 2.383)
+cifar10_resnet18_lowfreq_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 76.26% | 1117 B | 8.726 bpp (scan only 3.843)
+cifar10_resnet18_lowfreq_k8_e100_seed42 Q=10: acc 43.76% | 682 B | 5.328 bpp (scan only 0.446)
+cifar10_resnet18_lowfreq_k8_e100_seed42 Q=30: acc 44.91% | 715 B | 5.585 bpp (scan only 0.702)
+cifar10_resnet18_lowfreq_k8_e100_seed42 Q=50: acc 44.80% | 736 B | 5.748 bpp (scan only 0.865)
+cifar10_resnet18_lowfreq_k8_e100_seed42 Q=70: acc 45.12% | 761 B | 5.947 bpp (scan only 1.065)
+cifar10_resnet18_lowfreq_k8_e100_seed42 Q=90: acc 45.03% | 842 B | 6.575 bpp (scan only 1.693)
+cifar10_resnet18_lowfreq_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 60.40% | 686 B | 5.359 bpp (scan only 0.476)
+cifar10_resnet18_lowfreq_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 66.01% | 710 B | 5.545 bpp (scan only 0.662)
+cifar10_resnet18_lowfreq_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 66.41% | 725 B | 5.661 bpp (scan only 0.778)
+cifar10_resnet18_lowfreq_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 66.14% | 743 B | 5.801 bpp (scan only 0.918)
+cifar10_resnet18_lowfreq_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 66.20% | 793 B | 6.193 bpp (scan only 1.310)
+cifar10_resnet18_lowfreq_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 40.36% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_lowfreq_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 62.31% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_lowfreq_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 68.24% | 868 B | 6.783 bpp (scan only 1.900)
+cifar10_resnet18_lowfreq_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 71.89% | 954 B | 7.455 bpp (scan only 2.573)
+cifar10_resnet18_lowfreq_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 74.97% | 1219 B | 9.521 bpp (scan only 4.639)
+cifar10_resnet18_none_e100_seed42 Q=10: acc 44.38% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_none_e100_seed42 Q=30: acc 49.82% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_none_e100_seed42 Q=50: acc 50.61% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_none_e100_seed42 Q=70: acc 50.45% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_none_e100_seed42 Q=90: acc 50.86% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_none_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 38.29% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_none_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 57.03% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_none_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 65.09% | 868 B | 6.783 bpp (scan only 1.901)
+cifar10_resnet18_none_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 70.72% | 955 B | 7.459 bpp (scan only 2.576)
+cifar10_resnet18_none_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 75.12% | 1229 B | 9.605 bpp (scan only 4.722)
+cifar10_resnet18_pixel_e100_seed42 Q=10: acc 61.90% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_pixel_e100_seed42 Q=30: acc 74.70% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_pixel_e100_seed42 Q=50: acc 78.39% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_pixel_e100_seed42 Q=70: acc 79.89% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_pixel_e100_seed42 Q=90: acc 82.03% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_pixel_stemcifar_e100_seed42 Q=10: acc 63.61% | 699 B | 5.463 bpp (scan only 0.580)
+cifar10_resnet18_pixel_stemcifar_e100_seed42 Q=30: acc 79.33% | 774 B | 6.048 bpp (scan only 1.165)
+cifar10_resnet18_pixel_stemcifar_e100_seed42 Q=50: acc 82.69% | 826 B | 6.455 bpp (scan only 1.572)
+cifar10_resnet18_pixel_stemcifar_e100_seed42 Q=70: acc 84.88% | 894 B | 6.986 bpp (scan only 2.104)
+cifar10_resnet18_pixel_stemcifar_e100_seed42 Q=90: acc 87.34% | 1107 B | 8.648 bpp (scan only 3.765)
+cifar10_resnet18_random_k16_e100_seed42 Q=10: acc 32.57% | 674 B | 5.264 bpp (scan only 0.382)
+cifar10_resnet18_random_k16_e100_seed42 Q=30: acc 35.17% | 705 B | 5.511 bpp (scan only 0.628)
+cifar10_resnet18_random_k16_e100_seed42 Q=50: acc 37.24% | 730 B | 5.704 bpp (scan only 0.821)
+cifar10_resnet18_random_k16_e100_seed42 Q=70: acc 38.43% | 769 B | 6.010 bpp (scan only 1.127)
+cifar10_resnet18_random_k16_e100_seed42 Q=90: acc 38.77% | 891 B | 6.959 bpp (scan only 2.076)
+cifar10_resnet18_random_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 12.19% | 674 B | 5.269 bpp (scan only 0.386)
+cifar10_resnet18_random_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 19.24% | 693 B | 5.417 bpp (scan only 0.534)
+cifar10_resnet18_random_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 22.58% | 707 B | 5.522 bpp (scan only 0.639)
+cifar10_resnet18_random_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 24.40% | 726 B | 5.669 bpp (scan only 0.786)
+cifar10_resnet18_random_k16_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 31.62% | 787 B | 6.145 bpp (scan only 1.263)
+cifar10_resnet18_random_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 12.95% | 674 B | 5.269 bpp (scan only 0.386)
+cifar10_resnet18_random_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 17.76% | 694 B | 5.418 bpp (scan only 0.535)
+cifar10_resnet18_random_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 19.20% | 708 B | 5.533 bpp (scan only 0.650)
+cifar10_resnet18_random_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 21.77% | 731 B | 5.715 bpp (scan only 0.832)
+cifar10_resnet18_random_k24_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 33.29% | 816 B | 6.378 bpp (scan only 1.496)
+cifar10_resnet18_random_k32_e100_seed42 Q=10: acc 33.28% | 682 B | 5.330 bpp (scan only 0.448)
+cifar10_resnet18_random_k32_e100_seed42 Q=30: acc 42.51% | 736 B | 5.747 bpp (scan only 0.864)
+cifar10_resnet18_random_k32_e100_seed42 Q=50: acc 43.88% | 774 B | 6.051 bpp (scan only 1.168)
+cifar10_resnet18_random_k32_e100_seed42 Q=70: acc 44.53% | 828 B | 6.466 bpp (scan only 1.583)
+cifar10_resnet18_random_k32_e100_seed42 Q=90: acc 44.59% | 986 B | 7.701 bpp (scan only 2.818)
+cifar10_resnet18_random_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 16.78% | 684 B | 5.345 bpp (scan only 0.463)
+cifar10_resnet18_random_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 21.91% | 719 B | 5.616 bpp (scan only 0.733)
+cifar10_resnet18_random_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 26.84% | 748 B | 5.846 bpp (scan only 0.963)
+cifar10_resnet18_random_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 36.87% | 793 B | 6.192 bpp (scan only 1.310)
+cifar10_resnet18_random_k48_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 54.71% | 934 B | 7.297 bpp (scan only 2.414)
+cifar10_resnet18_random_k8_e100_seed42 Q=10: acc 12.64% | 666 B | 5.202 bpp (scan only 0.319)
+cifar10_resnet18_random_k8_e100_seed42 Q=30: acc 14.30% | 689 B | 5.379 bpp (scan only 0.497)
+cifar10_resnet18_random_k8_e100_seed42 Q=50: acc 15.84% | 706 B | 5.515 bpp (scan only 0.632)
+cifar10_resnet18_random_k8_e100_seed42 Q=70: acc 19.37% | 733 B | 5.728 bpp (scan only 0.845)
+cifar10_resnet18_random_k8_e100_seed42 Q=90: acc 29.01% | 823 B | 6.427 bpp (scan only 1.544)
+cifar10_resnet18_random_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 10.49% | 672 B | 5.246 bpp (scan only 0.364)
+cifar10_resnet18_random_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 14.48% | 680 B | 5.316 bpp (scan only 0.433)
+cifar10_resnet18_random_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 15.69% | 686 B | 5.356 bpp (scan only 0.474)
+cifar10_resnet18_random_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 15.94% | 692 B | 5.407 bpp (scan only 0.524)
+cifar10_resnet18_random_k8_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 19.52% | 716 B | 5.595 bpp (scan only 0.712)
+cifar10_resnet18_random_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 29.19% | 700 B | 5.468 bpp (scan only 0.586)
+cifar10_resnet18_random_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 42.70% | 766 B | 5.985 bpp (scan only 1.102)
+cifar10_resnet18_random_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 49.78% | 816 B | 6.378 bpp (scan only 1.496)
+cifar10_resnet18_random_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 57.30% | 884 B | 6.904 bpp (scan only 2.021)
+cifar10_resnet18_random_k96_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 68.75% | 1102 B | 8.610 bpp (scan only 3.727)
+cifar10_resnet18_xugate_lam0.0005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 42.33% | 715 B | 5.582 bpp (scan only 0.699)
+cifar10_resnet18_xugate_lam0.0005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 63.97% | 803 B | 6.274 bpp (scan only 1.391)
+cifar10_resnet18_xugate_lam0.0005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 68.82% | 868 B | 6.783 bpp (scan only 1.901)
+cifar10_resnet18_xugate_lam0.0005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 72.11% | 955 B | 7.458 bpp (scan only 2.576)
+cifar10_resnet18_xugate_lam0.0005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 75.72% | 1228 B | 9.597 bpp (scan only 4.715)
+cifar10_resnet18_xugate_lam0.001_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 43.34% | 714 B | 5.576 bpp (scan only 0.694)
+cifar10_resnet18_xugate_lam0.001_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 61.47% | 796 B | 6.222 bpp (scan only 1.339)
+cifar10_resnet18_xugate_lam0.001_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 66.27% | 854 B | 6.674 bpp (scan only 1.791)
+cifar10_resnet18_xugate_lam0.001_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 69.63% | 930 B | 7.262 bpp (scan only 2.379)
+cifar10_resnet18_xugate_lam0.001_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 73.19% | 1154 B | 9.013 bpp (scan only 4.130)
+cifar10_resnet18_xugate_lam0.005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 54.12% | 679 B | 5.301 bpp (scan only 0.418)
+cifar10_resnet18_xugate_lam0.005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 61.95% | 698 B | 5.452 bpp (scan only 0.569)
+cifar10_resnet18_xugate_lam0.005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 62.55% | 711 B | 5.552 bpp (scan only 0.669)
+cifar10_resnet18_xugate_lam0.005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 62.97% | 726 B | 5.670 bpp (scan only 0.787)
+cifar10_resnet18_xugate_lam0.005_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 63.31% | 766 B | 5.981 bpp (scan only 1.098)
+cifar10_resnet18_xugate_lam0.01_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 52.40% | 676 B | 5.285 bpp (scan only 0.402)
+cifar10_resnet18_xugate_lam0.01_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 59.15% | 689 B | 5.380 bpp (scan only 0.497)
+cifar10_resnet18_xugate_lam0.01_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 60.07% | 696 B | 5.440 bpp (scan only 0.557)
+cifar10_resnet18_xugate_lam0.01_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 59.96% | 706 B | 5.515 bpp (scan only 0.632)
+cifar10_resnet18_xugate_lam0.01_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 60.07% | 733 B | 5.726 bpp (scan only 0.844)
+cifar10_resnet18_xugate_lam0.05_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=10: acc 34.61% | 668 B | 5.220 bpp (scan only 0.337)
+cifar10_resnet18_xugate_lam0.05_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=30: acc 42.33% | 671 B | 5.244 bpp (scan only 0.361)
+cifar10_resnet18_xugate_lam0.05_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=50: acc 43.98% | 674 B | 5.263 bpp (scan only 0.380)
+cifar10_resnet18_xugate_lam0.05_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=70: acc 44.44% | 677 B | 5.288 bpp (scan only 0.405)
+cifar10_resnet18_xugate_lam0.05_ycbcr_stemnopool_s1_dctnorm_e100_seed42 Q=90: acc 44.77% | 687 B | 5.364 bpp (scan only 0.482)
+wrote rate_accuracy_cifar10.json
+Rule (fixed in advance): largest lambda whose mean held-out validation accuracy is within 1.0 points of CI-DCT. Test accuracy is not used.
+cifar10/resnet18/100 epochs, design y/pool: CI-DCT val 50.05%
+  TACS init 0 (repository default):
+     lambda=0.01: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.05: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.5: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     -> no lambda within tolerance
+  TACS init 2:
+     lambda=0.01: val 51.21 $\pm$ 0.52, bands 64.0 $\pm$ 0.0
+     lambda=0.05: val 51.69 $\pm$ 0.89, bands 64.0 $\pm$ 0.0
+     lambda=0.1: val 50.71 $\pm$ 0.52, bands 63.7 $\pm$ 0.6
+     lambda=0.5: val 42.58 $\pm$ 2.51, bands 8.3 $\pm$ 0.6
+     lambda=1: val 24.15 $\pm$ 14.58, bands 2.7 $\pm$ 2.3
+     -> selected lambda = 0.1
+cifar10/resnet18/100 epochs, design ycbcr/nopool_s1/norm: CI-DCT val 76.29%
+  TACS init 2:
+     lambda=0.01: val 75.71 $\pm$ 2.09, bands 192.0 $\pm$ 0.0
+     lambda=0.05: val 75.99 $\pm$ 1.25, bands 192.0 $\pm$ 0.0
+     lambda=0.1: val 76.35 $\pm$ 1.41, bands 192.0 $\pm$ 0.0
+     lambda=0.5: val 74.47 $\pm$ 0.83, bands 25.3 $\pm$ 2.1
+     lambda=1: val 69.28 $\pm$ 2.20, bands 11.3 $\pm$ 3.2
+     -> selected lambda = 0.1
+  Xu et al. gate:
+     lambda=0.0005: val 75.10 $\pm$ 0.72, bands 171.8 $\pm$ 12.6
+     lambda=0.001: val 75.13 $\pm$ 1.71, bands 61.6 $\pm$ 8.1
+     lambda=0.005: val 63.37 $\pm$ 0.96, bands 5.4 $\pm$ 0.5
+     lambda=0.01: val 61.84 $\pm$ 1.52, bands 4.0 $\pm$ 0.0
+     lambda=0.05: val 50.31 $\pm$ 5.22, bands 2.0 $\pm$ 0.4
+     -> no lambda within tolerance
+
+report written to report/
+Send back: <repo>/results/revision_results.tar.gz
+==== 2026-10-23 09:32:12 | stage 4 finished ====
+Job ended at: Fri Oct 23 09:32:12 AM IST 2026

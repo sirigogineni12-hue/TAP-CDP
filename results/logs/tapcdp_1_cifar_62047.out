@@ -1,0 +1,6 @@
+Job started at: Thu Oct 22 09:10:27 PM IST 2026 on mangala, GPUs: 0
+==== 2026-10-22 21:10:37 | stage 1: CIFAR-10 ====
+design from the pilot: --color ycbcr --stem nopool_s1 --dct_norm
+finished CIFAR-10 runs: 140
+==== 2026-10-23 00:04:51 | stage 1 finished ====
+Job ended at: Fri Oct 23 12:04:51 AM IST 2026
