@@ -1,0 +1,3 @@
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd-mangala: error: *** STEP 61875.0 ON mangala CANCELLED AT 2026-10-22T09:21:32 ***
+slurmstepd-mangala: error: *** JOB 61875 ON mangala CANCELLED AT 2026-10-22T09:21:32 ***

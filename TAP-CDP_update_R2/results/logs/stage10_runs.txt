@@ -1,0 +1,6 @@
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode none --color ycbcr_jpeg --stem nopool --dct_norm
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode none --color ycbcr_jpeg --stem pool --dct_norm
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode lowfreq --k 24 --color ycbcr_jpeg --stem nopool --dct_norm
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode lowfreq --k 48 --color ycbcr_jpeg --stem nopool --dct_norm
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode random --k 24 --color ycbcr_jpeg --stem nopool --dct_norm
+--dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode topk --k 24 --color ycbcr_jpeg --stem nopool --dct_norm

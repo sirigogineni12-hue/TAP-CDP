@@ -1,0 +1,3 @@
+556460 images failed; fix the cause (e.g. disk space) and run again
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=65044.0

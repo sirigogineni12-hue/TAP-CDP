@@ -1,0 +1,4 @@
+Job started at: Mon Nov  9 02:13:53 PM IST 2026 on mangala, GPUs: 0
+[done] imagenet_resnet50_pixel_e0_seed42 | val 87.37% | test 76.12%
+ImageNet val top-1 of torchvision ResNet-50: 76.12% (published 76.13%)
+Job ended at: Mon Nov  9 02:16:09 PM IST 2026

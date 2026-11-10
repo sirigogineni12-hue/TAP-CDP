@@ -1,0 +1,13 @@
+stage5_runs.txt: 12 of 12 runs (shard 0/1), 4 at a time on GPU 0
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 456

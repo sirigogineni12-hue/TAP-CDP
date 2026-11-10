@@ -1,0 +1,12 @@
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+--dataset cifar10 --data_root <repo>/results/data/cifar10 --backbone resnet18 --epochs 100 --workers 1 --mode topk --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 456

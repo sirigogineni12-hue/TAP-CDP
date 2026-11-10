@@ -1,0 +1,22 @@
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | DCT statistics from training images: mean |mean| 0.006, std range 0.003-8.896
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 1/20 | loss 1.3612 | val 80.80% | bands 24 | 26s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 2/20 | loss 0.8157 | val 85.80% | bands 24 | 24s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 3/20 | loss 0.6276 | val 88.00% | bands 24 | 13s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 4/20 | loss 0.5243 | val 87.60% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 5/20 | loss 0.4596 | val 91.00% | bands 24 | 20s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 6/20 | loss 0.4138 | val 91.40% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 7/20 | loss 0.3779 | val 93.20% | bands 24 | 17s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 8/20 | loss 0.3224 | val 91.60% | bands 24 | 12s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 9/20 | loss 0.3064 | val 93.40% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 10/20 | loss 0.2695 | val 94.20% | bands 24 | 18s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 11/20 | loss 0.2486 | val 95.60% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 12/20 | loss 0.2180 | val 95.20% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 13/20 | loss 0.1969 | val 95.20% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 14/20 | loss 0.1895 | val 95.00% | bands 24 | 13s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 15/20 | loss 0.1866 | val 94.80% | bands 24 | 26s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 16/20 | loss 0.1481 | val 95.20% | bands 24 | 16s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 17/20 | loss 0.1585 | val 95.80% | bands 24 | 18s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 18/20 | loss 0.1496 | val 95.20% | bands 24 | 24s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 19/20 | loss 0.1493 | val 95.40% | bands 24 | 15s
+imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | epoch 20/20 | loss 0.1309 | val 95.80% | bands 24 | 11s
+[done] imagenette_resnet50_lowfreq_k24_ycbcr_stemnopool_dctnorm_e20_seed42 | val 95.80% | test 94.93%

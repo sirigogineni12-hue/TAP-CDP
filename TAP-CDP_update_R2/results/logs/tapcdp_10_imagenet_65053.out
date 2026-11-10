@@ -1,0 +1,6 @@
+Job started at: Mon Nov  9 07:24:25 PM IST 2026 on mangala, GPUs: 0
+stage10_runs.txt: 3 of 6 runs (shard 0/2), 1 at a time on GPU 0
+FAILED: --dataset imagenet --data_root <repo>/results/data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode none --color ycbcr_jpeg --stem nopool --dct_norm (see logs/run__dataset_imagenet_backbone_resnet50_epochs_16_lr_0.05_batch_size_256_workers_7_seed_42_mode_none_color_ycbcr_jpeg_stem_nopool_dct_norm.log)
+FAILED: --dataset imagenet --data_root <repo>/results/data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode lowfreq --k 24 --color ycbcr_jpeg --stem nopool --dct_norm (see logs/run__dataset_imagenet_backbone_resnet50_epochs_16_lr_0.05_batch_size_256_workers_7_seed_42_mode_lowfreq_k_24_color_ycbcr_jpeg_stem_nopool_dct_norm.log)
+FAILED: --dataset imagenet --data_root <repo>/results/data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode random --k 24 --color ycbcr_jpeg --stem nopool --dct_norm (see logs/run__dataset_imagenet_backbone_resnet50_epochs_16_lr_0.05_batch_size_256_workers_7_seed_42_mode_random_k_24_color_ycbcr_jpeg_stem_nopool_dct_norm.log)
+Job ended at: Mon Nov  9 07:24:43 PM IST 2026

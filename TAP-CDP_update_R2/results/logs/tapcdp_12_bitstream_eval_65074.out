@@ -1,0 +1,101 @@
+Job started at: Tue Nov 10 10:42:03 AM IST 2026 on mangala, GPUs: 0
+imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=50: pixel path 64.56% | bitstream path 64.35% | 1.084 bpp
+imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=90: pixel path 69.71% | bitstream path 69.70% | 2.025 bpp
+imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=50: pixel path 59.85% | bitstream path 59.55% | 1.291 bpp
+imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=90: pixel path 69.31% | bitstream path 68.94% | 2.810 bpp
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 Q=50: pixel path 43.84% | bitstream path 40.15% | 1.331 bpp
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 Q=90: pixel path 55.69% | bitstream path 53.97% | 3.350 bpp
+imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=50: pixel path 58.46% | bitstream path 57.31% | 1.331 bpp
+imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=90: pixel path 68.20% | bitstream path 67.29% | 3.350 bpp
+imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=50: pixel path 3.13% | bitstream path 2.00% | 0.557 bpp
+imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=90: pixel path 15.42% | bitstream path 11.95% | 1.134 bpp
+imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=50: pixel path 53.60% | bitstream path 51.81% | 1.034 bpp
+imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42 Q=90: pixel path 67.42% | bitstream path 66.66% | 2.145 bpp
+imagenette_resnet18_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 89.91% | bitstream path 89.96% | 1.065 bpp
+imagenette_resnet18_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 89.83% | bitstream path 89.96% | 1.970 bpp
+imagenette_resnet18_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 90.27% | bitstream path 90.42% | 1.250 bpp
+imagenette_resnet18_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 90.32% | bitstream path 90.32% | 2.662 bpp
+imagenette_resnet18_none_ycbcr_jpeg_dctnorm_e20_seed42 Q=50: pixel path 78.45% | bitstream path 76.15% | 1.273 bpp
+imagenette_resnet18_none_ycbcr_jpeg_dctnorm_e20_seed42 Q=90: pixel path 81.45% | bitstream path 80.79% | 2.993 bpp
+imagenette_resnet18_none_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 88.03% | bitstream path 88.13% | 1.273 bpp
+imagenette_resnet18_none_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 88.48% | bitstream path 88.61% | 2.993 bpp
+imagenette_resnet18_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 36.13% | bitstream path 34.78% | 0.541 bpp
+imagenette_resnet18_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 72.38% | bitstream path 69.94% | 0.988 bpp
+imagenette_resnet18_random_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 78.90% | bitstream path 78.90% | 0.727 bpp
+imagenette_resnet18_random_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 85.48% | bitstream path 85.38% | 1.565 bpp
+imagenette_resnet18_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 87.49% | bitstream path 87.77% | 0.959 bpp
+imagenette_resnet18_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 87.80% | bitstream path 87.80% | 1.988 bpp
+imagenette_resnet18_topk_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 89.10% | bitstream path 88.97% | 1.137 bpp
+imagenette_resnet18_topk_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 89.04% | bitstream path 89.32% | 2.460 bpp
+imagenette_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 93.73% | bitstream path 93.76% | 1.065 bpp
+imagenette_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 93.63% | bitstream path 93.61% | 1.970 bpp
+imagenette_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 92.41% | bitstream path 92.31% | 1.250 bpp
+imagenette_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 92.38% | bitstream path 92.38% | 2.662 bpp
+imagenette_resnet50_none_ycbcr_jpeg_dctnorm_e20_seed42 Q=50: pixel path 84.23% | bitstream path 81.20% | 1.273 bpp
+imagenette_resnet50_none_ycbcr_jpeg_dctnorm_e20_seed42 Q=90: pixel path 86.24% | bitstream path 84.97% | 2.993 bpp
+imagenette_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 89.89% | bitstream path 89.27% | 1.273 bpp
+imagenette_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 90.55% | bitstream path 90.01% | 2.993 bpp
+imagenette_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 31.21% | bitstream path 29.27% | 0.541 bpp
+imagenette_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 75.34% | bitstream path 73.96% | 0.988 bpp
+imagenette_resnet50_random_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 81.38% | bitstream path 81.30% | 0.727 bpp
+imagenette_resnet50_random_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 88.46% | bitstream path 88.23% | 1.565 bpp
+imagenette_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 91.80% | bitstream path 91.72% | 0.894 bpp
+imagenette_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 91.95% | bitstream path 92.08% | 1.866 bpp
+imagenette_resnet50_topk_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=50: pixel path 93.48% | bitstream path 93.43% | 1.147 bpp
+imagenette_resnet50_topk_k48_ycbcr_jpeg_stemnopool_dctnorm_e20_seed42 Q=90: pixel path 93.48% | bitstream path 93.35% | 2.544 bpp
+Q= 50 pixel_std420        6981 B  nz=   9183  pillow_rgb=0.156  libjpeg_rgb=0.100  pixel_input=0.417  dct_from_pix=0.512  coef_read=0.067
+Q= 50 dct_std444          8418 B  nz=  11407  pillow_rgb=0.173  libjpeg_rgb=0.127  pixel_input=0.446  dct_from_pix=0.541  coef_read=0.092  coef_input=0.211
+Q= 50 dct_lowfreq24       6848 B  nz=   9098  pillow_rgb=0.196  libjpeg_rgb=0.114  pixel_input=0.435  dct_from_pix=0.526  coef_read=0.080  coef_input=0.200
+Q= 50 dct_lowfreq48       8168 B  nz=  11121  pillow_rgb=0.214  libjpeg_rgb=0.125  pixel_input=0.442  dct_from_pix=0.539  coef_read=0.090  coef_input=0.210
+Q= 90 pixel_std420       16789 B  nz=  21164  pillow_rgb=0.197  libjpeg_rgb=0.152  pixel_input=0.470  dct_from_pix=0.559  coef_read=0.117
+Q= 90 dct_std444         21235 B  nz=  27461  pillow_rgb=0.250  libjpeg_rgb=0.204  pixel_input=0.566  dct_from_pix=0.619  coef_read=0.169  coef_input=0.284
+Q= 90 dct_lowfreq24      12804 B  nz=  14278  pillow_rgb=0.229  libjpeg_rgb=0.141  pixel_input=0.486  dct_from_pix=0.551  coef_read=0.102  coef_input=0.223
+Q= 90 dct_lowfreq48      17786 B  nz=  22228  pillow_rgb=0.269  libjpeg_rgb=0.177  pixel_input=0.494  dct_from_pix=0.594  coef_read=0.140  coef_input=0.257
+wrote bitstream_bench_imagenet.json
+cifar10  resnet18: pixel 0.037 G | DCT 64ch 0.0117 G | pruned k=16 0.0116 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0117 G | y/nopool 0.0150 G | y/nopool_s1 0.0276 G | ycbcr/pool 0.0118 G | ycbcr/nopool 0.0152 G | ycbcr/nopool_s1 0.0278 G
+cifar10  resnet50: pixel 0.084 G | DCT 64ch 0.0243 G | pruned k=16 0.0243 G | block DCT 0.00002 G
+    designs (all channels): y/pool 0.0243 G | y/nopool 0.0313 G | y/nopool_s1 0.0696 G | ycbcr/pool 0.0245 G | ycbcr/nopool 0.0314 G | ycbcr/nopool_s1 0.0697 G
+imagenet resnet18: pixel 1.819 G | DCT 64ch 0.1258 G | pruned k=16 0.1233 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.1258 G | y/nopool 0.4600 G | y/nopool_s1 1.3547 G | ycbcr/pool 0.1322 G | ycbcr/nopool 0.4665 G | ycbcr/nopool_s1 1.3612 G
+imagenet resnet50: pixel 4.112 G | DCT 64ch 0.2964 G | pruned k=16 0.2940 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.2964 G | y/nopool 1.0570 G | y/nopool_s1 3.4100 G | ycbcr/pool 0.3028 G | ycbcr/nopool 1.0634 G | ycbcr/nopool_s1 3.4164 G
+imagenette resnet18: pixel 1.819 G | DCT 64ch 0.1252 G | pruned k=16 0.1228 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.1252 G | y/nopool 0.4595 G | y/nopool_s1 1.3542 G | ycbcr/pool 0.1317 G | ycbcr/nopool 0.4660 G | ycbcr/nopool_s1 1.3607 G
+imagenette resnet50: pixel 4.109 G | DCT 64ch 0.2943 G | pruned k=16 0.2919 G | block DCT 0.00080 G
+    designs (all channels): y/pool 0.2943 G | y/nopool 1.0549 G | y/nopool_s1 3.4079 G | ycbcr/pool 0.3008 G | ycbcr/nopool 1.0614 G | ycbcr/nopool_s1 3.4143 G
+wrote flops.json
+Rule (fixed in advance): largest lambda whose mean held-out validation accuracy is within 1.0 points of CI-DCT. Test accuracy is not used.
+cifar10/resnet18/100 epochs, design y/pool: CI-DCT val 50.05%
+  TACS init 0 (repository default):
+     lambda=0.01: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.05: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.5: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     -> no lambda within tolerance
+  TACS init 2:
+     lambda=0.01: val 51.21 $\pm$ 0.52, bands 64.0 $\pm$ 0.0
+     lambda=0.05: val 51.69 $\pm$ 0.89, bands 64.0 $\pm$ 0.0
+     lambda=0.1: val 50.71 $\pm$ 0.52, bands 63.7 $\pm$ 0.6
+     lambda=0.5: val 42.58 $\pm$ 2.51, bands 8.3 $\pm$ 0.6
+     lambda=1: val 24.15 $\pm$ 14.58, bands 2.7 $\pm$ 2.3
+     -> selected lambda = 0.1
+cifar10/resnet18/100 epochs, design ycbcr/nopool_s1/norm: CI-DCT val 76.29%
+  TACS init 2:
+     lambda=0.01: val 75.71 $\pm$ 2.09, bands 192.0 $\pm$ 0.0
+     lambda=0.05: val 75.99 $\pm$ 1.25, bands 192.0 $\pm$ 0.0
+     lambda=0.1: val 76.35 $\pm$ 1.41, bands 192.0 $\pm$ 0.0
+     lambda=0.5: val 74.47 $\pm$ 0.83, bands 25.3 $\pm$ 2.1
+     lambda=1: val 69.28 $\pm$ 2.20, bands 11.3 $\pm$ 3.2
+     -> selected lambda = 0.1
+  Xu et al. gate:
+     lambda=0.0005: val 75.10 $\pm$ 0.72, bands 171.8 $\pm$ 12.6
+     lambda=0.001: val 75.13 $\pm$ 1.71, bands 61.6 $\pm$ 8.1
+     lambda=0.005: val 63.37 $\pm$ 0.96, bands 5.4 $\pm$ 0.5
+     lambda=0.01: val 61.84 $\pm$ 1.52, bands 4.0 $\pm$ 0.0
+     lambda=0.05: val 50.31 $\pm$ 5.22, bands 2.0 $\pm$ 0.4
+     -> no lambda within tolerance
+
+report written to report/
+Job ended at: Tue Nov 10 10:56:52 AM IST 2026

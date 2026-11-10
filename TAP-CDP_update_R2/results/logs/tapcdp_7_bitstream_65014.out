@@ -1,0 +1,15 @@
+Job started at: Mon Nov  9 01:55:20 PM IST 2026 on mangala
+Q=95 4:4:4: coefficients (192, 28, 28); mean |read - DCT(decoded)| / mean |DCT| = 0.0314; max |libjpeg RGB - Pillow RGB| = 0
+Q=50 4:4:4: coefficients (192, 28, 28); mean |read - DCT(decoded)| / mean |DCT| = 0.0437; max |libjpeg RGB - Pillow RGB| = 0
+4:2:0 component block grids: [(28, 28), (14, 14), (14, 14)]
+bitstream self-test passed
+Q= 50 pixel_std420        6953 B  nz=   9052  pillow_rgb=0.144  libjpeg_rgb=0.100  pixel_input=0.417  dct_from_pix=0.955  coef_read=0.066
+Q= 50 dct_std444          8388 B  nz=  11278  pillow_rgb=0.192  libjpeg_rgb=0.128  pixel_input=0.489  dct_from_pix=0.535  coef_read=0.092  coef_input=0.212
+Q= 50 dct_lowfreq24       6814 B  nz=   8974  pillow_rgb=0.200  libjpeg_rgb=0.113  pixel_input=0.474  dct_from_pix=0.516  coef_read=0.079  coef_input=0.199
+Q= 50 dct_lowfreq48       8135 B  nz=  10989  pillow_rgb=0.217  libjpeg_rgb=0.126  pixel_input=0.486  dct_from_pix=0.533  coef_read=0.090  coef_input=0.209
+Q= 90 pixel_std420       16659 B  nz=  20872  pillow_rgb=0.197  libjpeg_rgb=0.151  pixel_input=0.467  dct_from_pix=0.556  coef_read=0.117
+Q= 90 dct_std444         21054 B  nz=  27107  pillow_rgb=0.299  libjpeg_rgb=0.203  pixel_input=0.495  dct_from_pix=0.611  coef_read=0.163  coef_input=0.286
+Q= 90 dct_lowfreq24      12690 B  nz=  14115  pillow_rgb=0.187  libjpeg_rgb=0.141  pixel_input=0.480  dct_from_pix=0.545  coef_read=0.102  coef_input=0.223
+Q= 90 dct_lowfreq48      17592 B  nz=  21913  pillow_rgb=0.261  libjpeg_rgb=0.176  pixel_input=0.495  dct_from_pix=0.582  coef_read=0.137  coef_input=0.256
+wrote bitstream_bench.json
+Job ended at: Mon Nov  9 01:56:08 PM IST 2026

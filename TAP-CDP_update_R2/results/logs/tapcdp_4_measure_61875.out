@@ -1,0 +1,9 @@
+Job started at: Thu Oct 22 07:36:12 AM IST 2026 on mangala, GPUs: 0
+==== 2026-10-22 07:36:14 | stage 4: measurements and report ====
+cifar10  resnet18: pixel 0.037 G | DCT 64ch 0.0117 G | pruned k=16 0.0116 G | block DCT 0.00002 G
+cifar10  resnet50: pixel 0.084 G | DCT 64ch 0.0243 G | pruned k=16 0.0243 G | block DCT 0.00002 G
+imagenet resnet18: pixel 1.819 G | DCT 64ch 0.1258 G | pruned k=16 0.1233 G | block DCT 0.00080 G
+imagenet resnet50: pixel 4.112 G | DCT 64ch 0.2964 G | pruned k=16 0.2940 G | block DCT 0.00080 G
+wrote flops.json
+skipping latency profiling (needs IMAGENET_ROOT and a CUDA GPU)
+cifar10_resnet18_learned_lam0.01_e100_seed42 Q=10: acc 10.00% | 656 B | 5.126 bpp (scan only 0.243)

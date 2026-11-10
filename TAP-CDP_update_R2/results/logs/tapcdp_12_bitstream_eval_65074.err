@@ -1,0 +1,50 @@
+Traceback (most recent call last):
+  File "<repo>/revision/eval_bitstream.py", line 102, in <module>
+    main()
+    ~~~~^^
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "<repo>/revision/eval_bitstream.py", line 67, in main
+    model, cfg, res = load_run(r, dev)
+                      ~~~~~~~~^^^^^^^^
+  File "<repo>/revision/common.py", line 462, in load_run
+    ck = torch.load(os.path.join(run_dir, "last.pt"), map_location="cpu")
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/imagenet_resnet50_pixel_e0_seed42/last.pt'
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=65074.0
+Traceback (most recent call last):
+  File "<repo>/revision/eval_bitstream.py", line 102, in <module>
+    main()
+    ~~~~^^
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "<repo>/revision/eval_bitstream.py", line 67, in main
+    model, cfg, res = load_run(r, dev)
+                      ~~~~~~~~^^^^^^^^
+  File "<repo>/revision/common.py", line 462, in load_run
+    ck = torch.load(os.path.join(run_dir, "last.pt"), map_location="cpu")
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 1565, in load
+    with _open_file_like(f, "rb") as opened_file:
+         ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 795, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "<home>/miniconda3/lib/python3.14/site-packages/torch/serialization.py", line 776, in __init__
+    super().__init__(open(name, mode))  # noqa: SIM115
+                     ~~~~^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'runs/imagenette_resnet18_pixel_e20_seed42/last.pt'
+srun: error: mangala: task 0: Exited with exit code 1
+srun: Terminating StepId=65074.1
+<home>/miniconda3/lib/python3.14/site-packages/torch/jit/_script.py:1485: FutureWarning: `torch.jit.script` is not supported in Python 3.14+ and may break. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+<repo>/revision/make_report.py:93: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  for (ds, bb, ep, tq, key), g in df.groupby(["dataset", "backbone", "epochs", df["test_q"].fillna(-1), "key"], sort=True):
+<repo>/revision/make_report.py:292: FutureWarning: Downcasting object dtype arrays on .fillna, .ffill, .bfill is deprecated and will change in a future version. Call result.infer_objects(copy=False) instead. To opt-in to the future behavior, set `pd.set_option('future.no_silent_downcasting', True)`
+  for (ds, bb, ep, tq), g in gt.groupby(["dataset", "backbone", "epochs", gt["test_jpeg_q"].fillna(-1)]):

@@ -1,0 +1,14 @@
+CIFAR-10 pilot: 13 of 26 runs (shard 1/2), 2 at a time on GPU 1
+done: --mode none --color y --stem pool --dct_norm --seed 42
+done: --mode none --color y --stem nopool --dct_norm --seed 42
+done: --mode none --color y --stem nopool_s1 --dct_norm --seed 42
+done: --mode none --color ycbcr --stem pool --dct_norm --seed 42
+done: --mode none --color ycbcr --stem nopool --dct_norm --seed 42
+done: --mode none --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode none --color y --stem pool  --seed 123
+done: --mode none --color y --stem nopool  --seed 123
+done: --mode none --color y --stem nopool_s1  --seed 123
+done: --mode none --color ycbcr --stem pool  --seed 123
+done: --mode none --color ycbcr --stem nopool  --seed 123
+done: --mode none --color ycbcr --stem nopool_s1  --seed 123
+done: --mode pixel --stem cifar --seed 123

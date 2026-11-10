@@ -1,0 +1,70 @@
+CIFAR-10: 69 of 69 runs (shard 0/1), 4 at a time on GPU 0
+done: --mode none --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode pixel --stem cifar --seed 42
+done: --mode pixel --stem pool --seed 42
+done: --mode learned --lam 0.01 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode learned --lam 0.05 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode learned --lam 0.1 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode learned --lam 0.5 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode learned --lam 1.0 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode xugate --lam 0.005 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode xugate --lam 0.0005 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode xugate --lam 0.001 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode lowfreq --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode xugate --lam 0.05 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode random --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode xugate --lam 0.01 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode random --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode random --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode lowfreq --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode lowfreq --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode lowfreq --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode lowfreq --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode none --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode pixel --stem cifar --seed 123
+done: --mode pixel --stem pool --seed 123
+done: --mode random --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 42
+done: --mode learned --lam 0.01 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode learned --lam 0.5 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode learned --lam 0.1 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode learned --lam 0.05 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode xugate --lam 0.0005 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode xugate --lam 0.001 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode learned --lam 1.0 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode xugate --lam 0.005 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode xugate --lam 0.01 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode lowfreq --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode xugate --lam 0.05 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode lowfreq --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode lowfreq --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode lowfreq --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode lowfreq --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode random --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 123
+done: --mode pixel --stem pool --seed 456
+done: --mode none --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode learned --lam 0.01 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode pixel --stem cifar --seed 456
+done: --mode learned --lam 0.05 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode learned --lam 0.5 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode learned --lam 1.0 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode learned --lam 0.1 --tacs_init 2 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode xugate --lam 0.0005 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode xugate --lam 0.01 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode xugate --lam 0.005 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode xugate --lam 0.001 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode xugate --lam 0.05 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode random --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode lowfreq --k 8 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode random --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode lowfreq --k 16 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode random --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode lowfreq --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode lowfreq --k 24 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode random --k 48 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode random --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 456
+done: --mode lowfreq --k 96 --color ycbcr --stem nopool_s1 --dct_norm --seed 456

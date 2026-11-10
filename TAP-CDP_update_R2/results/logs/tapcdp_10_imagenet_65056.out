@@ -1,0 +1,6 @@
+Job started at: Mon Nov  9 07:35:05 PM IST 2026 on mangala, GPUs: 0
+stage10_runs.txt: 3 of 6 runs (shard 1/2), 1 at a time on GPU 0
+done: --dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode none --color ycbcr_jpeg --stem pool --dct_norm
+done: --dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode lowfreq --k 48 --color ycbcr_jpeg --stem nopool --dct_norm
+done: --dataset imagenet --data_root <private-storage>/tapcdp_data/imagenet256 --backbone resnet50 --epochs 16 --lr 0.05 --batch_size 256 --workers 7 --seed 42 --mode topk --k 24 --color ycbcr_jpeg --stem nopool --dct_norm
+Job ended at: Tue Nov 10 02:43:58 AM IST 2026

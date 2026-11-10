@@ -1,0 +1,395 @@
+{
+  "method": "Accuracy of trained models when the input is read directly from JPEG bitstreams.\n\nEvery test image (resized to 256, centre-cropped to 224x224) is encoded at each quality Q with the model's\nencoder settings (rate_accuracy.encoder_settings: masked tables and 4:4:4 for DCT models, standard tables and\n4:2:0 for pixel models). For DCT-domain models trained on JPEG-convention YCbCr (--color ycbcr_jpeg), the\nsame file is classified in two ways:\n  pixel path     : full decode -> RGB -> model (the DCT is computed from the decoded pixels on the GPU),\n  bitstream path : entropy decoding only -> dequantized coefficients (bitstream.coefficient_tensor) -> model.\nPixel-domain models use the pixel path only. Also reported: bits per pixel of the files.\nOutput: bitstream_eval_<dataset>.json\n",
+  "env": {
+    "python": "3.14.6",
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.2+cu132",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "cpu_count": 256,
+    "gpus": [
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+    ],
+    "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB\nNVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB"
+  },
+  "n_images": 50000,
+  "results": [
+    {
+      "run_id": "imagenet_resnet50_pixel_e0_seed42",
+      "mode": "pixel",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:2:0",
+      "bpp_total": 0.462601237244898,
+      "acc_pixel_path": 48.248
+    },
+    {
+      "run_id": "imagenet_resnet50_pixel_e0_seed42",
+      "mode": "pixel",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:2:0",
+      "bpp_total": 0.8330759948979591,
+      "acc_pixel_path": 67.564
+    },
+    {
+      "run_id": "imagenet_resnet50_pixel_e0_seed42",
+      "mode": "pixel",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:2:0",
+      "bpp_total": 1.1054860076530613,
+      "acc_pixel_path": 70.466
+    },
+    {
+      "run_id": "imagenet_resnet50_pixel_e0_seed42",
+      "mode": "pixel",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:2:0",
+      "bpp_total": 1.4693911926020407,
+      "acc_pixel_path": 72.372
+    },
+    {
+      "run_id": "imagenet_resnet50_pixel_e0_seed42",
+      "mode": "pixel",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:2:0",
+      "bpp_total": 2.6562975605867343,
+      "acc_pixel_path": 74.956
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5573241581632653,
+      "acc_pixel_path": 32.546,
+      "acc_bitstream_path": 32.314,
+      "max_softmax_diff_paths": 0.5652695298194885
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.8779899075255102,
+      "acc_pixel_path": 58.178,
+      "acc_bitstream_path": 57.862,
+      "max_softmax_diff_paths": 0.3508460819721222
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.0835782334183675,
+      "acc_pixel_path": 64.56,
+      "acc_bitstream_path": 64.354,
+      "max_softmax_diff_paths": 0.2871275842189789
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.3325613042091837,
+      "acc_pixel_path": 67.862,
+      "acc_bitstream_path": 67.772,
+      "max_softmax_diff_paths": 0.2743069529533386
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 2.025276170280612,
+      "acc_pixel_path": 69.708,
+      "acc_bitstream_path": 69.7,
+      "max_softmax_diff_paths": 0.3229598104953766
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5690628156887755,
+      "acc_pixel_path": 29.302,
+      "acc_bitstream_path": 28.98,
+      "max_softmax_diff_paths": 0.5760272145271301
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.987098950892857,
+      "acc_pixel_path": 53.578,
+      "acc_bitstream_path": 53.226,
+      "max_softmax_diff_paths": 0.3633004128932953
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.2913650892857143,
+      "acc_pixel_path": 59.852,
+      "acc_bitstream_path": 59.548,
+      "max_softmax_diff_paths": 0.4586437940597534
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.6786096906887755,
+      "acc_pixel_path": 64.594,
+      "acc_bitstream_path": 64.132,
+      "max_softmax_diff_paths": 0.3344416916370392
+    },
+    {
+      "run_id": "imagenet_resnet50_lowfreq_k48_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "lowfreq",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 2.8099186798469384,
+      "acc_pixel_path": 69.306,
+      "acc_bitstream_path": 68.94,
+      "max_softmax_diff_paths": 0.3713836669921875
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5692326211734694,
+      "acc_pixel_path": 15.52,
+      "acc_bitstream_path": 12.432,
+      "max_softmax_diff_paths": 0.9212550520896912
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.9978266836734694,
+      "acc_pixel_path": 36.636,
+      "acc_bitstream_path": 32.99,
+      "max_softmax_diff_paths": 0.8298206329345703
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.3308074872448978,
+      "acc_pixel_path": 43.838,
+      "acc_bitstream_path": 40.15,
+      "max_softmax_diff_paths": 0.8858029842376709
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.7876559151785716,
+      "acc_pixel_path": 49.278,
+      "acc_bitstream_path": 46.022,
+      "max_softmax_diff_paths": 0.9132184386253357
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 3.35035540497449,
+      "acc_pixel_path": 55.694,
+      "acc_bitstream_path": 53.974,
+      "max_softmax_diff_paths": 0.8199507594108582
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5692326211734694,
+      "acc_pixel_path": 32.576,
+      "acc_bitstream_path": 32.204,
+      "max_softmax_diff_paths": 0.5383161902427673
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.9978266836734694,
+      "acc_pixel_path": 53.466,
+      "acc_bitstream_path": 52.784,
+      "max_softmax_diff_paths": 0.47804608941078186
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.3308074872448978,
+      "acc_pixel_path": 58.46,
+      "acc_bitstream_path": 57.314,
+      "max_softmax_diff_paths": 0.7562991976737976
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.7876559151785716,
+      "acc_pixel_path": 62.44,
+      "acc_bitstream_path": 61.026,
+      "max_softmax_diff_paths": 0.6637598276138306
+    },
+    {
+      "run_id": "imagenet_resnet50_none_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "none",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 3.35035540497449,
+      "acc_pixel_path": 68.204,
+      "acc_bitstream_path": 67.29,
+      "max_softmax_diff_paths": 0.5461444854736328
+    },
+    {
+      "run_id": "imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "random",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.3931485969387755,
+      "acc_pixel_path": 0.374,
+      "acc_bitstream_path": 0.276,
+      "max_softmax_diff_paths": 0.8620792031288147
+    },
+    {
+      "run_id": "imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "random",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.4817280389030612,
+      "acc_pixel_path": 1.588,
+      "acc_bitstream_path": 0.9,
+      "max_softmax_diff_paths": 0.9260393381118774
+    },
+    {
+      "run_id": "imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "random",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5567092155612244,
+      "acc_pixel_path": 3.134,
+      "acc_bitstream_path": 2.004,
+      "max_softmax_diff_paths": 0.9715093970298767
+    },
+    {
+      "run_id": "imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "random",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.6781930357142858,
+      "acc_pixel_path": 5.956,
+      "acc_bitstream_path": 4.166,
+      "max_softmax_diff_paths": 0.9122541546821594
+    },
+    {
+      "run_id": "imagenet_resnet50_random_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "random",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.1344827359693879,
+      "acc_pixel_path": 15.418,
+      "acc_bitstream_path": 11.948,
+      "max_softmax_diff_paths": 0.9375417232513428
+    },
+    {
+      "run_id": "imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "topk",
+      "quality": 10,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.5260919579081633,
+      "acc_pixel_path": 28.994,
+      "acc_bitstream_path": 28.112,
+      "max_softmax_diff_paths": 0.686676561832428
+    },
+    {
+      "run_id": "imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "topk",
+      "quality": 30,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 0.8242572034438775,
+      "acc_pixel_path": 47.276,
+      "acc_bitstream_path": 45.846,
+      "max_softmax_diff_paths": 0.5554959177970886
+    },
+    {
+      "run_id": "imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "topk",
+      "quality": 50,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.0339827742346939,
+      "acc_pixel_path": 53.604,
+      "acc_bitstream_path": 51.808,
+      "max_softmax_diff_paths": 0.5489403009414673
+    },
+    {
+      "run_id": "imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "topk",
+      "quality": 70,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 1.3038859725765306,
+      "acc_pixel_path": 58.888,
+      "acc_bitstream_path": 57.406,
+      "max_softmax_diff_paths": 0.5536074042320251
+    },
+    {
+      "run_id": "imagenet_resnet50_topk_k24_ycbcr_jpeg_stemnopool_dctnorm_e16_seed42",
+      "mode": "topk",
+      "quality": 90,
+      "n_images": 50000,
+      "chroma_subsampling": "4:4:4",
+      "bpp_total": 2.1447067952806123,
+      "acc_pixel_path": 67.422,
+      "acc_bitstream_path": 66.656,
+      "max_softmax_diff_paths": 0.47409528493881226
+    }
+  ]
+}

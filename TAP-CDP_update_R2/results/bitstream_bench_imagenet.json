@@ -1,0 +1,330 @@
+{
+  "method": "Decoder-side cost of the pixel path and of the bitstream (coefficient) path, measured on real JPEG files.\n\nFor N test photos (resized to 256, centre-cropped to 224x224) and each quality Q, files are encoded as\n  * pixel_std420   : standard libjpeg tables, 4:2:0 (input of a pixel-domain network),\n  * dct_std444     : standard tables, 4:4:4 (input of a DCT-domain network using all channels),\n  * dct_lowfreq{k} : tables with the bands outside the k-channel low-frequency mask set to step 255, 4:4:4.\nTimed on one CPU thread (median of --repeats passes over all files, ms per image):\n  pillow_rgb     Pillow decode to RGB\n  libjpeg_rgb    libjpeg full decode (entropy decoding, dequantization, inverse DCT, upsampling, colour)\n  pixel_input    libjpeg_rgb + float conversion and normalization (CPU input of the pixel network)\n  dct_from_pix   libjpeg decode to YCbCr + forward block DCT in numpy (how the DCT input is computed today)\n  coef_read      entropy decoding only (jpeg_read_coefficients)\n  coef_input     coef_read + dequantization + channel layout (CPU input of a DCT network, from the bitstream)\nAlso reported: bytes per file, nonzero coefficients per image, and for 4:4:4 files the agreement between\nbitstream coefficients and the DCT of the decoded image. Output: bitstream_bench.json\n",
+  "env": {
+    "python": "3.14.6",
+    "torch": "2.14.1+cu130",
+    "torchvision": "0.29.2+cu132",
+    "cuda": "13.0",
+    "cudnn": 92400,
+    "platform": "Linux-6.8.0-147-generic-x86_64-with-glibc2.39",
+    "cpu": "x86_64",
+    "cpu_count": 256,
+    "gpus": [
+      "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition"
+    ],
+    "nvidia_smi": "NVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB\nNVIDIA RTX PRO 6000 Blackwell Max-Q Workstation Edition, 595.58.03, 97887 MiB"
+  },
+  "n_images": 512,
+  "image_size": 224,
+  "threads": "1",
+  "results": [
+    {
+      "variant": "pixel_std420",
+      "quality": 50,
+      "subsampling": "4:2:0",
+      "bytes_mean": 6980.990234375,
+      "nonzero_coefficients_mean": 9182.541015625,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.1558015683258418,
+          "min_ms": 0.15554221681668423,
+          "max_ms": 0.15759699772388558
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.09972945690606139,
+          "min_ms": 0.09936083006323315,
+          "max_ms": 0.10021771277024527
+        },
+        "pixel_input": {
+          "median_ms": 0.4173686406829802,
+          "min_ms": 0.41686905660753837,
+          "max_ms": 0.43007867543565226
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5118096405567485,
+          "min_ms": 0.510166222738917,
+          "max_ms": 0.522706064657541
+        },
+        "coef_read": {
+          "median_ms": 0.06663333988399245,
+          "min_ms": 0.06646799192822073,
+          "max_ms": 0.06682802541035926
+        }
+      }
+    },
+    {
+      "variant": "dct_std444",
+      "quality": 50,
+      "subsampling": "4:4:4",
+      "bytes_mean": 8418.349609375,
+      "nonzero_coefficients_mean": 11407.115234375,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.1734723105073499,
+          "min_ms": 0.17326129682260216,
+          "max_ms": 0.17443038495912333
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.12742309399982332,
+          "min_ms": 0.12715899629256455,
+          "max_ms": 0.1281529707739537
+        },
+        "pixel_input": {
+          "median_ms": 0.44640101350523764,
+          "min_ms": 0.44480388260126347,
+          "max_ms": 0.44716340607919847
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5407557050602918,
+          "min_ms": 0.5398448965934222,
+          "max_ms": 0.5438170387606078
+        },
+        "coef_read": {
+          "median_ms": 0.09211791984853335,
+          "min_ms": 0.09190798255076515,
+          "max_ms": 0.09218163086188724
+        },
+        "coef_input": {
+          "median_ms": 0.21126204501342727,
+          "min_ms": 0.21086244169055135,
+          "max_ms": 0.21295360966178123
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.02604708449381462
+    },
+    {
+      "variant": "dct_lowfreq24",
+      "quality": 50,
+      "subsampling": "4:4:4",
+      "bytes_mean": 6848.107421875,
+      "nonzero_coefficients_mean": 9097.6796875,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.19631459417723818,
+          "min_ms": 0.19587084989325376,
+          "max_ms": 0.19776574981733575
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.1144419688898779,
+          "min_ms": 0.11408109367039287,
+          "max_ms": 0.11910057037312072
+        },
+        "pixel_input": {
+          "median_ms": 0.43502244943738333,
+          "min_ms": 0.4346709083620226,
+          "max_ms": 0.43655891613525455
+        },
+        "dct_from_pix": {
+          "median_ms": 0.525735013980011,
+          "min_ms": 0.5243249124760041,
+          "max_ms": 0.5265186582619208
+        },
+        "coef_read": {
+          "median_ms": 0.07985202137206215,
+          "min_ms": 0.07962436939124018,
+          "max_ms": 0.08012996886463952
+        },
+        "coef_input": {
+          "median_ms": 0.19998822654088144,
+          "min_ms": 0.19958754683102597,
+          "max_ms": 0.20110563491471112
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.02777012882248875
+    },
+    {
+      "variant": "dct_lowfreq48",
+      "quality": 50,
+      "subsampling": "4:4:4",
+      "bytes_mean": 8168.29296875,
+      "nonzero_coefficients_mean": 11121.275390625,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.21368692023315816,
+          "min_ms": 0.2132349727617111,
+          "max_ms": 0.21451913880810025
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.12547063442980289,
+          "min_ms": 0.12480386521929177,
+          "max_ms": 0.1260139706573682
+        },
+        "pixel_input": {
+          "median_ms": 0.4422626620907977,
+          "min_ms": 0.44201328682902385,
+          "max_ms": 0.44329780439511524
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5391760173552029,
+          "min_ms": 0.53897324596619,
+          "max_ms": 0.5452762788991095
+        },
+        "coef_read": {
+          "median_ms": 0.09034372260430246,
+          "min_ms": 0.08976671688287752,
+          "max_ms": 0.09115970897255465
+        },
+        "coef_input": {
+          "median_ms": 0.20976081214030273,
+          "min_ms": 0.20937310182489455,
+          "max_ms": 0.21037822853031685
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.026319408956336617
+    },
+    {
+      "variant": "pixel_std420",
+      "quality": 90,
+      "subsampling": "4:2:0",
+      "bytes_mean": 16788.884765625,
+      "nonzero_coefficients_mean": 21164.087890625,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.1969006229955994,
+          "min_ms": 0.196576154394279,
+          "max_ms": 0.19909868569811806
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.15150038689171197,
+          "min_ms": 0.15142036727411323,
+          "max_ms": 0.15316681265176157
+        },
+        "pixel_input": {
+          "median_ms": 0.46955350944699603,
+          "min_ms": 0.4691308399742411,
+          "max_ms": 0.47000565245980397
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5592073380285001,
+          "min_ms": 0.5584403338616539,
+          "max_ms": 0.5603569920822338
+        },
+        "coef_read": {
+          "median_ms": 0.11709307227647514,
+          "min_ms": 0.11666247291941545,
+          "max_ms": 0.12122984344387078
+        }
+      }
+    },
+    {
+      "variant": "dct_std444",
+      "quality": 90,
+      "subsampling": "4:4:4",
+      "bytes_mean": 21234.87109375,
+      "nonzero_coefficients_mean": 27460.578125,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.2498375156392285,
+          "min_ms": 0.2497176715223759,
+          "max_ms": 0.2505479742467287
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.2035947090917034,
+          "min_ms": 0.20313817003625445,
+          "max_ms": 0.20404407996466034
+        },
+        "pixel_input": {
+          "median_ms": 0.5660102501678921,
+          "min_ms": 0.564446419957676,
+          "max_ms": 0.5671782050740148
+        },
+        "dct_from_pix": {
+          "median_ms": 0.6187510098243365,
+          "min_ms": 0.6183033005981997,
+          "max_ms": 0.619666821876308
+        },
+        "coef_read": {
+          "median_ms": 0.16888442951312754,
+          "min_ms": 0.16835931819514371,
+          "max_ms": 0.16924907595239347
+        },
+        "coef_input": {
+          "median_ms": 0.28439804873414687,
+          "min_ms": 0.2840635606844444,
+          "max_ms": 0.2844521309270931
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.03333954272616105
+    },
+    {
+      "variant": "dct_lowfreq24",
+      "quality": 90,
+      "subsampling": "4:4:4",
+      "bytes_mean": 12803.521484375,
+      "nonzero_coefficients_mean": 14278.34765625,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.2290767697559204,
+          "min_ms": 0.22833099774288712,
+          "max_ms": 0.23414677116306848
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.14116177180767409,
+          "min_ms": 0.14114337091086782,
+          "max_ms": 0.14213564463716466
+        },
+        "pixel_input": {
+          "median_ms": 0.48643677928339457,
+          "min_ms": 0.4862502969444904,
+          "max_ms": 0.4894681701443915
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5511781505447289,
+          "min_ms": 0.5491458673532179,
+          "max_ms": 0.5545349863496085
+        },
+        "coef_read": {
+          "median_ms": 0.10175435545534128,
+          "min_ms": 0.10148182218472357,
+          "max_ms": 0.1029146174005291
+        },
+        "coef_input": {
+          "median_ms": 0.2228499238299264,
+          "min_ms": 0.22250568963499973,
+          "max_ms": 0.22319142408377957
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.03917699138013252
+    },
+    {
+      "variant": "dct_lowfreq48",
+      "quality": 90,
+      "subsampling": "4:4:4",
+      "bytes_mean": 17785.59765625,
+      "nonzero_coefficients_mean": 22228.498046875,
+      "timing": {
+        "pillow_rgb": {
+          "median_ms": 0.26869953308050754,
+          "min_ms": 0.26847430081033963,
+          "max_ms": 0.26982455847246456
+        },
+        "libjpeg_rgb": {
+          "median_ms": 0.17669645330897765,
+          "min_ms": 0.17661446099737077,
+          "max_ms": 0.17696055056148907
+        },
+        "pixel_input": {
+          "median_ms": 0.49395497671866906,
+          "min_ms": 0.492331441364513,
+          "max_ms": 0.49509019936522236
+        },
+        "dct_from_pix": {
+          "median_ms": 0.5940623204878648,
+          "min_ms": 0.592135000260896,
+          "max_ms": 0.5973571660433663
+        },
+        "coef_read": {
+          "median_ms": 0.13981848451294354,
+          "min_ms": 0.13843609758623643,
+          "max_ms": 0.14346988882607548
+        },
+        "coef_input": {
+          "median_ms": 0.25743916785359033,
+          "min_ms": 0.2570745059529145,
+          "max_ms": 0.25812636931732413
+        }
+      },
+      "coef_vs_dct_of_decoded_rel_diff": 0.036824375313436505
+    }
+  ]
+}

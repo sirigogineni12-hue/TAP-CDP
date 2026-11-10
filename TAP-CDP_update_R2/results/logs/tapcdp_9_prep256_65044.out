@@ -1,0 +1,41 @@
+Job started at: Mon Nov  9 05:02:16 PM IST 2026 on mangala, GPUs: 0
+1281167 training images
+100000 / 1281167
+200000 / 1281167
+300000 / 1281167
+400000 / 1281167
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_1037.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_1037.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10373.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10373.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10392.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10392.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10394.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10394.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10404.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10404.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10451.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10451.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10474.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10474.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10501.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10501.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10561.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10561.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10562.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10562.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10564.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10564.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10614.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10614.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10645.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10645.JPEG'
+failed: <repo>/results/data/imagenet/train/n02443114/n02443114_10660.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n02443114/n02443114_10660.JPEG'
+... [556437 further lines 'failed: ... No such file or directory' removed to keep the file small: this attempt ran while its output folder was being deleted; it was repeated as job 65052] ...
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_6373.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_6373.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_639.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_639.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_6413.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_6413.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20462.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20462.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_6415.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_6415.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20481.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20481.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_205.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_205.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20521.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20521.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20538.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20538.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20547.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20547.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20553.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20553.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20580.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20580.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20610.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20610.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20612.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20612.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20613.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20613.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20633.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20633.JPEG'
+failed: <repo>/results/data/imagenet/train/n15075141/n15075141_20639.JPEG: [Errno 2] No such file or directory: '<repo>/results/data/imagenet256/train/n15075141/n15075141_20639.JPEG'
+converted 724707, failed 556460, already complete 0, total 1281167
+28G	<repo>/results/data/imagenet256/train
+Job ended at: Mon Nov  9 05:41:14 PM IST 2026

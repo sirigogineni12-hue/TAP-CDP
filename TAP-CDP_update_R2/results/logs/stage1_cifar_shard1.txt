@@ -1,0 +1,28 @@
+CIFAR-10: 27 of 54 runs (shard 1/2), 2 at a time on GPU 1
+done: --mode pixel --seed 42
+done: --mode learned --lam 0.01 --tacs_init 2 --seed 42
+done: --mode learned --lam 0.1 --tacs_init 2 --seed 42
+done: --mode learned --lam 0.05 --tacs_init 2 --seed 42
+done: --mode learned --lam 0.5 --tacs_init 2 --seed 42
+done: --mode learned --lam 1.0 --tacs_init 2 --seed 42
+done: --mode random --k 8 --seed 42
+done: --mode random --k 16 --seed 42
+done: --mode random --k 32 --seed 42
+done: --mode pixel --seed 123
+done: --mode learned --lam 0.01 --tacs_init 2 --seed 123
+done: --mode learned --lam 0.05 --tacs_init 2 --seed 123
+done: --mode learned --lam 0.1 --tacs_init 2 --seed 123
+done: --mode learned --lam 0.5 --tacs_init 2 --seed 123
+done: --mode learned --lam 1.0 --tacs_init 2 --seed 123
+done: --mode random --k 8 --seed 123
+done: --mode random --k 16 --seed 123
+done: --mode random --k 32 --seed 123
+done: --mode learned --lam 0.01 --tacs_init 2 --seed 456
+done: --mode pixel --seed 456
+done: --mode learned --lam 0.1 --tacs_init 2 --seed 456
+done: --mode learned --lam 0.05 --tacs_init 2 --seed 456
+done: --mode learned --lam 0.5 --tacs_init 2 --seed 456
+done: --mode learned --lam 1.0 --tacs_init 2 --seed 456
+done: --mode random --k 16 --seed 456
+done: --mode random --k 8 --seed 456
+done: --mode random --k 32 --seed 456

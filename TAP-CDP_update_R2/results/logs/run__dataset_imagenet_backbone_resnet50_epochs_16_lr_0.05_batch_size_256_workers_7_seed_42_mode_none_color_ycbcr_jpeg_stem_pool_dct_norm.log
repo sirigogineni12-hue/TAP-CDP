@@ -1,0 +1,18 @@
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | DCT statistics from training images: mean |mean| 1.055, std range 0.163-494.858
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 1/16 | loss 4.5413 | val 26.63% | bands 192 | 976s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 2/16 | loss 3.3898 | val 35.72% | bands 192 | 460s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 3/16 | loss 3.0742 | val 39.89% | bands 192 | 444s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 4/16 | loss 2.9005 | val 42.39% | bands 192 | 449s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 5/16 | loss 2.7748 | val 44.21% | bands 192 | 450s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 6/16 | loss 2.6670 | val 46.00% | bands 192 | 448s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 7/16 | loss 2.5713 | val 47.08% | bands 192 | 447s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 8/16 | loss 2.4823 | val 48.79% | bands 192 | 449s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 9/16 | loss 2.3869 | val 50.46% | bands 192 | 449s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 10/16 | loss 2.2904 | val 52.81% | bands 192 | 447s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 11/16 | loss 2.1890 | val 55.26% | bands 192 | 448s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 12/16 | loss 2.0827 | val 56.70% | bands 192 | 451s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 13/16 | loss 1.9740 | val 58.03% | bands 192 | 450s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 14/16 | loss 1.8760 | val 59.99% | bands 192 | 451s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 15/16 | loss 1.7933 | val 60.83% | bands 192 | 448s
+imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | epoch 16/16 | loss 1.7447 | val 61.62% | bands 192 | 448s
+[done] imagenet_resnet50_none_ycbcr_jpeg_dctnorm_e16_seed42 | val 61.62% | test 56.43%

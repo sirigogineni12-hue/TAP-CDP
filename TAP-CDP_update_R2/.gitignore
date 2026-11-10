@@ -1,0 +1,6 @@
+results/data/
+*.pt
+__pycache__/
+*.pyc
+.DS_Store
+results/revision_results.tar.gz

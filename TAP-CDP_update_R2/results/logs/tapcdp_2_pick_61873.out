@@ -1,0 +1,35 @@
+Job started at: Thu Oct 22 07:33:29 AM IST 2026 on mangala, GPUs: 0
+==== 2026-10-22 07:33:31 | stage 2: CIFAR-10 report and ImageNet settings ====
+Rule (fixed in advance): largest lambda whose mean held-out validation accuracy is within 1.0 points of CI-DCT. Test accuracy is not used.
+cifar10/resnet18/100 epochs: CI-DCT val 50.05%
+  TACS init 0 (repository default):
+     lambda=0.01: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.05: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=0.5: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     lambda=1: val 10.00 $\pm$ 0.00, bands 0.0 $\pm$ 0.0
+     -> no lambda within tolerance
+  TACS init 2:
+     lambda=0.01: val 51.21 $\pm$ 0.52, bands 64.0 $\pm$ 0.0
+     lambda=0.05: val 51.69 $\pm$ 0.89, bands 64.0 $\pm$ 0.0
+     lambda=0.1: val 50.71 $\pm$ 0.52, bands 63.7 $\pm$ 0.6
+     lambda=0.5: val 42.58 $\pm$ 2.51, bands 8.3 $\pm$ 0.6
+     lambda=1: val 24.15 $\pm$ 14.58, bands 2.7 $\pm$ 2.3
+     -> selected lambda = 0.1
+
+report written to report/
+Rule: largest lambda with mean val accuracy within 1.0 points of CI-DCT and >= 1 active band.
+CI-DCT mean val accuracy: 50.05%
+  init 0, lambda 0.01: val 10.00%, bands 0.0
+  init 0, lambda 0.05: val 10.00%, bands 0.0
+  init 0, lambda 0.1: val 10.00%, bands 0.0
+  init 0, lambda 0.5: val 10.00%, bands 0.0
+  init 0, lambda 1: val 10.00%, bands 0.0
+  init 2, lambda 0.01: val 51.21%, bands 64.0
+  init 2, lambda 0.05: val 51.69%, bands 64.0
+  init 2, lambda 0.1: val 50.71%, bands 63.7
+  init 2, lambda 0.5: val 42.58%, bands 8.3
+  init 2, lambda 1: val 24.15%, bands 2.7
+Selected for ImageNet: TACS_INIT=2, LAMBDAS=0.1
+==== 2026-10-22 07:33:37 | stage 2 finished ====
+Job ended at: Thu Oct 22 07:33:37 AM IST 2026

@@ -1,0 +1,1 @@
+epoch,lr,tau,train_loss,task_loss,mask_mean,active_bands,val_acc,epoch_time_s

@@ -1,0 +1,8 @@
+Rule: largest lambda with mean val accuracy within 1.0 points of CI-DCT and >= 1 active band.
+CI-DCT mean val accuracy: 76.29%
+  init 2, lambda 0.01: val 75.71%, bands 192.0
+  init 2, lambda 0.05: val 75.99%, bands 192.0
+  init 2, lambda 0.1: val 76.35%, bands 192.0
+  init 2, lambda 0.5: val 74.47%, bands 25.3
+  init 2, lambda 1: val 69.28%, bands 11.3
+Selected for ImageNet: TACS_INIT=2, LAMBDAS=0.1
